@@ -1,0 +1,506 @@
+{
+  "collection": {
+    "info": {
+      "_postman_id": "002f2fb2-5624-444e-90eb-22833d0beae9",
+      "name": "Machine_test",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2023-04-15T17:24:20.000Z",
+      "uid": "15510627-002f2fb2-5624-444e-90eb-22833d0beae9"
+    },
+    "item": [
+      {
+        "name": "SIGN UP",
+        "id": "54d2361c-65dd-4abe-a871-00a08bf49ce4",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "POST",
+          "header": [
+            
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"name\" : \"rakhi raikwar\",\r\n    \"email\" : \"rakhi@yopmail.com\",\r\n    \"mobile\" : \"9754567820\",\r\n    \"password\" : \"rakhi@123#\",\r\n    \"address\" : \"Indore\",\r\n    \"latitude\" : \"101\",\r\n    \"longitude\" : \"109\"\r\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "localhost:3000/api/v1/auth/sign-up",
+            "host": [
+              "localhost"
+            ],
+            "port": "3000",
+            "path": [
+              "api",
+              "v1",
+              "auth",
+              "sign-up"
+            ]
+          }
+        },
+        "response": [
+          
+        ],
+        "uid": "15510627-54d2361c-65dd-4abe-a871-00a08bf49ce4"
+      },
+      {
+        "name": "SIGN IN",
+        "id": "9e7f5e43-7b10-48f2-ad36-9805bbbe4093",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "POST",
+          "header": [
+            
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"email\" : \"rakhi@yopmail.com\",\r\n    \"password\":\"rakhi@123#\"\r\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "localhost:3000/api/v1/auth/sign-in",
+            "host": [
+              "localhost"
+            ],
+            "port": "3000",
+            "path": [
+              "api",
+              "v1",
+              "auth",
+              "sign-in"
+            ]
+          }
+        },
+        "response": [
+          
+        ],
+        "uid": "15510627-9e7f5e43-7b10-48f2-ad36-9805bbbe4093"
+      },
+      {
+        "name": "FORGET PASSWORD",
+        "id": "19685670-b870-43a2-ba1b-779b5d43e3d8",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "POST",
+          "header": [
+            
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"email\" : \"rakhi@yopmail.com\"\r\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "localhost:3000/api/v1/auth/forget-password",
+            "host": [
+              "localhost"
+            ],
+            "port": "3000",
+            "path": [
+              "api",
+              "v1",
+              "auth",
+              "forget-password"
+            ]
+          }
+        },
+        "response": [
+          
+        ],
+        "uid": "15510627-19685670-b870-43a2-ba1b-779b5d43e3d8"
+      },
+      {
+        "name": "RESET PASSWORD",
+        "id": "cea07179-71fe-44ba-a638-dcbef363aff6",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "POST",
+          "header": [
+            
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"email\" : \"roshni@yopmail.com\",\r\n    \"otp\" : \"253315\",\r\n    \"password\" : \"ruchi@123#\"\r\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "localhost:3000/api/v1/auth/reset-password",
+            "host": [
+              "localhost"
+            ],
+            "port": "3000",
+            "path": [
+              "api",
+              "v1",
+              "auth",
+              "reset-password"
+            ]
+          }
+        },
+        "response": [
+          
+        ],
+        "uid": "15510627-cea07179-71fe-44ba-a638-dcbef363aff6"
+      },
+      {
+        "name": "UPDATE PROFILE",
+        "id": "7092b2de-3323-401d-9f1a-357b2b11e729",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "PUT",
+          "header": [
+            {
+              "key": "Authorization",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiZW1haWwiOiJyYWtoaUB5b3BtYWlsLmNvbSIsImlhdCI6MTY4MTU2OTM2MSwiZXhwIjoxNjgxNTY5OTYxfQ.a7vqFSoU6oKY4De819tskc5-uuNTfphsBaUvZDCD5-k",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"name\" : \"Mamtaaaa Raikwar\",\r\n    \"email\" : \"rakhi@yopmail.com\",\r\n    \"mobile\" : \"1234567897\",\r\n    \"address\" : \"Indore\",\r\n    \"latitude\" : \"101\",\r\n    \"longitude\" : \"109\"\r\n\r\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "localhost:3000/api/v1/user/update-profile",
+            "host": [
+              "localhost"
+            ],
+            "port": "3000",
+            "path": [
+              "api",
+              "v1",
+              "user",
+              "update-profile"
+            ]
+          }
+        },
+        "response": [
+          
+        ],
+        "uid": "15510627-7092b2de-3323-401d-9f1a-357b2b11e729"
+      },
+      {
+        "name": "SHOW PROFILE",
+        "id": "26a5e2c6-b33a-401f-97c3-e60c03fc4359",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "Authorization",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiZW1haWwiOiJyYWtoaUB5b3BtYWlsLmNvbSIsImlhdCI6MTY4MTU3MDkzNywiZXhwIjoxNjgxNTcxNTM3fQ.K4q3FUvhbEDiqEN53nFlZGKEq5GTed2CDTOAyf5yepk",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "localhost:3000/api/v1/user/show-profile",
+            "host": [
+              "localhost"
+            ],
+            "port": "3000",
+            "path": [
+              "api",
+              "v1",
+              "user",
+              "show-profile"
+            ]
+          }
+        },
+        "response": [
+          
+        ],
+        "uid": "15510627-26a5e2c6-b33a-401f-97c3-e60c03fc4359"
+      },
+      {
+        "name": "SEARCH FRIEND",
+        "id": "2b4dfa7a-21a2-400e-bde5-52fef2b14ea8",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "Authorization",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiZW1haWwiOiJyYWtoaUB5b3BtYWlsLmNvbSIsImlhdCI6MTY4MTU3MDkzNywiZXhwIjoxNjgxNTcxNTM3fQ.K4q3FUvhbEDiqEN53nFlZGKEq5GTed2CDTOAyf5yepk",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "localhost:3000/api/v1/user/search-friend?query=mamta",
+            "host": [
+              "localhost"
+            ],
+            "port": "3000",
+            "path": [
+              "api",
+              "v1",
+              "user",
+              "search-friend"
+            ],
+            "query": [
+              {
+                "key": "query",
+                "value": "mamta",
+                "description": "name/email/phone"
+              }
+            ]
+          }
+        },
+        "response": [
+          
+        ],
+        "uid": "15510627-2b4dfa7a-21a2-400e-bde5-52fef2b14ea8"
+      },
+      {
+        "name": "VIEW PROFILE BY ID",
+        "id": "7211bab3-74c6-43ae-b7d3-0b6467a1b7ea",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "Authorization",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJyb3NobmlAeW9wbWFpbC5jb20iLCJpYXQiOjE2ODE1NTgzODMsImV4cCI6MTY4MTU1ODk4M30.lAJDP514R7x2X8l4XnUwDFFC8Y3ECje9RSAx9ovUEnk",
+              "type": "text"
+            }
+          ],
+          "url": {
+            "raw": "localhost:3000/api/v1/user/view-profile/:userId",
+            "host": [
+              "localhost"
+            ],
+            "port": "3000",
+            "path": [
+              "api",
+              "v1",
+              "user",
+              "view-profile",
+              ":userId"
+            ],
+            "variable": [
+              {
+                "id": "bcf32d85-cfc7-4492-a224-cb105804a8cd",
+                "key": "userId",
+                "value": "2"
+              }
+            ]
+          }
+        },
+        "response": [
+          
+        ],
+        "uid": "15510627-7211bab3-74c6-43ae-b7d3-0b6467a1b7ea"
+      },
+      {
+        "name": "SEND FRIEND REQUEST",
+        "id": "e2acaf5a-afdb-4e41-b4e9-1ab2ab1ba0be",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Authorization",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiZW1haWwiOiJyYWtoaUB5b3BtYWlsLmNvbSIsImlhdCI6MTY4MTU3MDE0OSwiZXhwIjoxNjgxNTcwNzQ5fQ.Qv7VJi6gcyk5oQyFl4_0DjHio3zepHEK6osR07J5xEw",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"friendId\" : 5\r\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "localhost:3000/api/v1/user/friend-request",
+            "host": [
+              "localhost"
+            ],
+            "port": "3000",
+            "path": [
+              "api",
+              "v1",
+              "user",
+              "friend-request"
+            ]
+          }
+        },
+        "response": [
+          
+        ],
+        "uid": "15510627-e2acaf5a-afdb-4e41-b4e9-1ab2ab1ba0be"
+      },
+      {
+        "name": "FRIENDS LIST",
+        "id": "35e57f1a-8df6-4089-a050-5b273b12cc8f",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "Authorization",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiZW1haWwiOiJyYWtoaUB5b3BtYWlsLmNvbSIsImlhdCI6MTY4MTU3ODk0MywiZXhwIjoxNjgxNTc5NTQzfQ.SQffDY0d38DZHnS_GxQvFrXO8U-tcECSTPNnAc_JEhE",
+              "type": "text"
+            }
+          ],
+          "url": {
+            "raw": "localhost:3000/api/v1/user/friends-list",
+            "host": [
+              "localhost"
+            ],
+            "port": "3000",
+            "path": [
+              "api",
+              "v1",
+              "user",
+              "friends-list"
+            ]
+          }
+        },
+        "response": [
+          
+        ],
+        "uid": "15510627-35e57f1a-8df6-4089-a050-5b273b12cc8f"
+      },
+      {
+        "name": "ACCEPT OR REJECT REQUEST",
+        "id": "29b5b7c2-3b43-41d4-a959-50e060bb74e1",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "PUT",
+          "header": [
+            {
+              "key": "Authorization",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiZW1haWwiOiJyYWtoaUB5b3BtYWlsLmNvbSIsImlhdCI6MTY4MTU3MDkzNywiZXhwIjoxNjgxNTcxNTM3fQ.K4q3FUvhbEDiqEN53nFlZGKEq5GTed2CDTOAyf5yepk",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"friendId\" : 5,\r\n    \"status\" : \"accepted\"\r\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "localhost:3000/api/v1/user/friend-request",
+            "host": [
+              "localhost"
+            ],
+            "port": "3000",
+            "path": [
+              "api",
+              "v1",
+              "user",
+              "friend-request"
+            ]
+          }
+        },
+        "response": [
+          
+        ],
+        "uid": "15510627-29b5b7c2-3b43-41d4-a959-50e060bb74e1"
+      },
+      {
+        "name": "REFRESH TOKEN",
+        "id": "1803e9e8-4b5d-4c34-acc3-b228e4300abe",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "POST",
+          "header": [
+            
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"token\" : \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiZW1haWwiOiJyYWtoaUB5b3BtYWlsLmNvbSIsImlhdCI6MTY4MTU2ODYyNCwiZXhwIjoxNjgxNTY5MjI0fQ.oDHWLMuh9gsE_bMU6auT-EUota1tuWVss6Rb5oa2Zg4\"\r\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "localhost:3000/api/v1/auth/refresh-token",
+            "host": [
+              "localhost"
+            ],
+            "port": "3000",
+            "path": [
+              "api",
+              "v1",
+              "auth",
+              "refresh-token"
+            ]
+          }
+        },
+        "response": [
+          
+        ],
+        "uid": "15510627-1803e9e8-4b5d-4c34-acc3-b228e4300abe"
+      }
+    ]
+  }
+}
